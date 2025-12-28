@@ -239,11 +239,10 @@ Embeddings	Local ONNX model
 ORM	SQLAlchemy
 Validation	Pydantic
 Server	Uvicorn
-Queue/Event processor	(Optional) Background worker
+Queue/Event processor	
+
+
 🚀 Future Enhancements
-
-You can mention these in interviews:
-
 User behavior tracking (real-time events)
 
 ML-based re-ranking model
