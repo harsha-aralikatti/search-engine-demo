@@ -13,6 +13,7 @@ This project showcases how modern e-commerce platforms build smart search engine
 🎯 Hybrid Semantic + Filter-based Ranking
 
 🚀 Features Implemented
+
 ✅ 1. Product Ingestion
 
 Add multiple products in a single API call
@@ -73,6 +74,7 @@ Repositories
 Config layer
 
 🏗 Project Architecture
+
 src/
 ├── api/
 │   ├── routes/
@@ -101,10 +103,12 @@ src/
 Follow these steps to run the project locally.
 
 1️⃣ Clone the Repository
+
 git clone https://github.com/harsha-aralikatti/search-engine-demo.git
 cd search-engine-demo
 
 2️⃣ Create Virtual Environment
+
 Mac/Linux
 python3 -m venv venv
 source venv/bin/activate
@@ -114,9 +118,11 @@ python -m venv venv
 venv\Scripts\activate
 
 3️⃣ Install Dependencies
+
 pip install -r requirements.txt
 
 4️⃣ Start Qdrant (Vector Database)
+
 Using Docker (Recommended)
 docker run -p 6333:6333 qdrant/qdrant
 
@@ -127,6 +133,7 @@ brew services start qdrant
 Windows
 
 Download Qdrant binary:
+
 👉 https://qdrant.tech/documentation/quickstart/
 
 Run:
@@ -135,6 +142,7 @@ qdrant.exe
 
 
 Qdrant UI:
+
 👉 http://localhost:6333/dashboard
 
 5️⃣ Configure PostgreSQL
@@ -161,6 +169,7 @@ Run:
 python src/core/database.py
 
 7️⃣ Start FastAPI Server
+
 uvicorn src.main:app --reload
 
 
@@ -231,18 +240,20 @@ Body
 }
 
 🛠 Tech Stack
-Component	Technology
-Backend API	FastAPI
-Database	PostgreSQL
-Vector DB	Qdrant
-Embeddings	Local ONNX model
-ORM	SQLAlchemy
-Validation	Pydantic
-Server	Uvicorn
+
+Component	   Technology
+Backend API	 FastAPI
+Database	   PostgreSQL
+Vector       DB	Qdrant
+Embeddings	 Local ONNX model
+ORM	         SQLAlchemy
+Validation	 Pydantic
+Server	     Uvicorn
 Queue/Event processor	
 
 
 🚀 Future Enhancements
+
 User behavior tracking (real-time events)
 
 ML-based re-ranking model
